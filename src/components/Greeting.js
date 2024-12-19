@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 let Greeting = () => {
     let [inputValue, setInputValue] = useState("");
-    let [name, setName] = useState("Hello na!");
+    let [name, setName] = useState("");
 
     function update(e) {
         let value = e.target.value;
@@ -18,7 +18,8 @@ let Greeting = () => {
             <p>Enter your name:</p>
             <input type="text" onChange={update} value={inputValue} />
             <button onClick={greet}>Greet</button>
-            <p>{name}</p>
+    {name&&<p>Hello, {name}!</p>}
+    
         </div>
     );
 };
