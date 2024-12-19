@@ -3,7 +3,7 @@ import React ,{useState}from "react";
 import './../styles/App.css';
 
 const App = () => {
-  let [name,setName]=useState("Hello n!")
+  let [name,setName]=useState("Hello na!")
   function update(e){
     let value = e.target.value 
     setName(value)
