@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 let Greeting = () => {
     let [inputValue, setInputValue] = useState("");
-    let [name, setName] = useState("Hello n!");
+    let [name, setName] = useState("Hello na!");
 
     function update(e) {
         let value = e.target.value;
