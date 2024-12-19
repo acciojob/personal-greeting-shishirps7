@@ -18,7 +18,7 @@ let Greeting = () => {
             <p>Enter your name:</p>
             <input type="text" onChange={update} value={inputValue} />
             <button onClick={greet}>Greet</button>
-    {name&&<p>Hello, {name}!</p>}
+    {name&&<p>Hello {name}!</p>}
     
         </div>
     );
